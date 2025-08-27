@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yasmin Mahmoud — Portfolio</title>
+
+  <!-- Tailwind + CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+</head>
+<body class="bg-slate-900 text-white">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full bg-slate-800 shadow-lg z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-teal-400">Yasmin MH</h1>
+      
+      <!-- Hamburger for mobile -->
+      <button id="menu-btn" class="md:hidden text-teal-400 text-2xl">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Desktop Links -->
+      <nav class="hidden md:flex space-x-6 items-center">
+        <a href="#home" class="hover:text-teal-400">Home</a>
+        <a href="#about" class="hover:text-teal-400">About</a>
+        <a href="#skills" class="hover:text-teal-400">Skills</a>
+        <a href="#projects" class="hover:text-teal-400">Projects</a>
+        <a href="#resume" class="hover:text-teal-400">Resume</a>
+        <a href="#contact" class="hover:text-teal-400">Contact</a>
+
+        <!-- Social Media Desktop -->
+        <div class="flex space-x-4 ml-6">
+          <a href="https://github.com/Yasmin-Mahmoud12" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/yasmin-mahmoud-566220379" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:yasminmahmoud4500@gmail.com" target="_blank" class="social-icon"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.threads.net/@yyasmiiin_mahmouddd7" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/17AmjX1VUe/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden flex-col bg-slate-800 py-6 md:hidden">
+      <a href="#home" class="flex items-center px-6 py-3 hover:bg-slate-700 hover:text-teal-400">
+        <i class="fas fa-house text-teal-400 text-lg mr-3"></i><span>Home</span>
+      </a>
+      <a href="#about" class="flex items-center px-6 py-3 hover:bg-slate-700 hover:text-teal-400">
+        <i class="fas fa-user text-teal-400 text-lg mr-3"></i><span>About</span>
+      </a>
+      <a href="#skills" class="flex items-center px-6 py-3 hover:bg-slate-700 hover:text-teal-400">
+        <i class="fas fa-code text-teal-400 text-lg mr-3"></i><span>Skills</span>
+      </a>
+      <a href="#projects" class="flex items-center px-6 py-3 hover:bg-slate-700 hover:text-teal-400">
+        <i class="fas fa-diagram-project text-teal-400 text-lg mr-3"></i><span>Projects</span>
+      </a>
+      <a href="#resume" class="flex items-center px-6 py-3 hover:bg-slate-700 hover:text-teal-400">
+        <i class="fas fa-file-alt text-teal-400 text-lg mr-3"></i><span>Resume</span>
+      </a>
+      <a href="#contact" class="flex items-center px-6 py-3 hover:bg-slate-700 hover:text-teal-400">
+        <i class="fas fa-envelope text-teal-400 text-lg mr-3"></i><span>Contact</span>
+      </a>
+
+      <!-- Social Icons Mobile -->
+      <div class="flex justify-center space-x-6 mt-6">
+        <a href="https://github.com/Yasmin-Mahmoud12" target="_blank" class="text-teal-400 text-xl hover:text-teal-300">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/yasmin-mahmoud-566220379" target="_blank" class="text-teal-400 text-xl hover:text-teal-300">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:yasminmahmoud4500@gmail.com" target="_blank" class="text-teal-400 text-xl hover:text-teal-300">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.threads.net/@yyasmiiin_mahmouddd7" target="_blank" class="text-teal-400 text-xl hover:text-teal-300">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/share/17AmjX1VUe/" target="_blank" class="text-teal-400 text-xl hover:text-teal-300">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-32 container mx-auto px-6 flex flex-col md:flex-row items-center">
+    <div class="flex-1 text-center md:text-left space-y-4" data-aos="fade-right">
+      <h1 class="text-4xl md:text-5xl font-bold">Hi, I'm <span class="text-teal-400">Yasmin Mahmoud</span></h1>
+      <p class="text-gray-300">
+        Full Stack .NET Developer passionate about creating modern, responsive applications.
+      </p>
+    </div>
+    <div class="flex-1 flex justify-center mt-8 md:mt-0" data-aos="fade-left">
+      <img src="profile.jpg" alt="Profile" class="w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 rounded-full border-4 border-teal-400 object-cover"/>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container mx-auto px-6 py-16 md:py-20 text-center" data-aos="fade-up">
+    <h2 class="section-title">About Me</h2>
+    <p class="text-gray-300 leading-relaxed max-w-2xl mx-auto">
+      I am a passionate Backend & Full Stack Developer specializing in .NET technologies. 
+      I have extensive experience in web development. 
+      I seek to work in an organization that allows me to realize my potential and serve it with all that I know, 
+      and I also aim to develop my skills as I am very passionate and love to learn a lot in this field.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="container mx-auto px-6 py-16 md:py-20 text-center">
+    <h2 class="section-title">My Skills</h2>
+    <div id="skills-container" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6"></div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="container mx-auto px-6 py-16 md:py-20 text-center">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-card" data-aos="fade-up">
+      <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1000" class="w-full h-64 object-cover rounded-t-lg" alt="Library Project"/>
+      <div class="p-6 bg-slate-800 rounded-b-lg">
+        <h3 class="font-bold text-xl mb-2">Library Management System</h3>
+        <p class="text-gray-300 mb-4">
+          Academic project with ASP.NET MVC & SQL Server (role-based access, grade automation, reporting).
+        </p>
+        <a href="https://github.com/Yasmin-Mahmoud12/LibraryManagementSystem" target="_blank" class="btn">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume" class="container mx-auto px-6 py-16 md:py-20">
+    <h2 class="section-title text-center mb-6">My Resume</h2>
+    <div class="resume-box" data-aos="fade-up">
+      <p class="intro-text mb-6">
+        Here is a brief overview of my professional background and skills. 
+        For a more detailed look, you can download the full version of my CV.
+      </p>
+      <h3 class="resume-subtitle">Summary</h3>
+      <p class="resume-text mb-6">
+        Full Stack .NET Developer with hands-on experience in building responsive and scalable web applications.
+        I seek to work in an organization that allows me to realize my potential and serve it with all that I know, 
+        and I also aim to develop my skills as I am very passionate and love to learn a lot in this field.
+      </p>
+      <h3 class="resume-subtitle">Key Skills</h3>
+      <ul class="resume-list mb-6">
+        <li>Full Stack Development (.NET, C#, ASP.NET MVC)</li>
+        <li>Backend Development & APIs</li>
+        <li>Frontend Development (HTML, CSS, JavaScript)</li>
+        <li>Database Management (SQL Server)</li>
+        <li>OOP & Clean Code Principles</li>
+        <li>Python & PHP Basics</li>
+      </ul>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="Yasmin Mahmoud CV.pdf" target="_blank" class="btn"><i class="fas fa-download"></i> Download Resume</a>
+        <button onclick="window.print()" class="btn"><i class="fas fa-print"></i> Print Resume</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container mx-auto px-6 py-16 md:py-20 text-center">
+    <h2 class="section-title">Contact Me</h2>
+    <form action="https://formspree.io/f/mdklkayb" method="POST" class="max-w-lg mx-auto flex flex-col space-y-4">
+      <input type="text" name="name" placeholder="Your Name" class="form-input" required/>
+      <input type="email" name="email" placeholder="Your Email" class="form-input" required/>
+      <textarea name="message" placeholder="Your Message" class="form-input" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-800 py-6 text-center text-gray-400">
+    © <span id="year"></span> Yasmin Mahmoud. All rights reserved.
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll("#mobile-menu a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    });
+  </script>
+</body>
+</html>

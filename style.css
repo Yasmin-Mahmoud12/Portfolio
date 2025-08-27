@@ -1,0 +1,147 @@
+/* === Global Reset === */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Section Titles === */
+.section-title {
+  font-size: 2rem; /* أصغر شوية للموبايل */
+  font-weight: bold;
+  color: #2dd4bf;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* === Hero Section Description === */
+#home p {
+  font-size: 1.1rem;   
+  color: #d1d5db;       
+  max-width: 90%;  /* مناسب للموبايل */
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* === About Section === */
+#about p {
+  font-size: 1.1rem;  
+  color: #d1d5db;
+  text-align: center;
+}
+
+/* === Skills === */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* مرن حسب الشاشة */
+  gap: 16px;
+  padding: 0 10px;
+}
+.skill-card {
+  background: #1e293b;
+  border: 2px solid #2dd4bf;
+  color: white;
+  font-weight: bold;
+  padding: 16px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+.skill-card i {
+  font-size: 1.8rem; /* أصغر شوية للموبايل */
+  color: #2dd4bf;
+}
+.skill-card:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #2dd4bf, #0ea5e9);
+  color: white;
+  box-shadow: 0 0 12px #2dd4bf;
+}
+
+/* === Resume Section === */
+.resume-box {
+  background: #1e293b;
+  border: 2px solid #2dd4bf;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 0 10px;
+  color: #e5e7eb;
+}
+.resume-box p,
+.resume-box li {
+  font-size: 1rem;   
+  color: #d1d5db;
+}
+.resume-subtitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #2dd4bf;
+}
+.resume-list {
+  list-style: disc;
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* === Buttons === */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #2dd4bf;
+  color: #0f172a;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+.btn:hover {
+  background: #0ea5e9;
+  color: white;
+}
+
+/* === Form Inputs === */
+.form-input {
+  background: #1e293b;
+  border: 2px solid #2dd4bf;
+  padding: 0.6rem;
+  border-radius: 8px;
+  color: white;
+  width: 100%;
+  font-size: 1rem;
+}
+.form-input:focus {
+  outline: none;
+  border-color: #0ea5e9;
+}
+
+/* === Social Icons === */
+.social-icon {
+  font-size: 1.5rem;  
+  color: #2dd4bf;
+  transition: all 0.3s ease;
+}
+.social-icon:hover {
+  color: #0ea5e9;
+  transform: scale(1.2);
+}
+
+/* === Responsive Fixes === */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+  #home p, #about p {
+    font-size: 1rem;
+  }
+  .skill-card {
+    padding: 12px;
+  }
+}
